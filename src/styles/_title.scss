@@ -1,0 +1,9 @@
+.title {
+  display: flex;
+  justify-content: center;
+
+  &__heading {
+    margin: 40px;
+    font-size: 50px;
+  }
+}

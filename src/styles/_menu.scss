@@ -1,0 +1,71 @@
+@mixin centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightblue;
+  }
+  
+  .parent {
+    @include centered;
+  }
+  
+  .header {
+    @include centered;
+    color: white;
+  
+    &__subtitle {
+      margin: 0;
+      color: purple;
+    }
+  }
+  
+  .menu {
+    @include centered;
+    margin: 20px;
+  
+    &__btn {
+      @include centered;
+      width: 800px;
+      height: 40px;
+      font-size: large;
+      padding: 40px;
+      border-radius: 20px;
+      margin: 20px;
+      font-size:40px;
+  
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+  
+      &--green {
+        background-color: green;
+        color: white;
+      }
+  
+      &--blue {
+        background-color: blue;
+        color: white;
+      }
+  
+      &--orange {
+        background-color: orange;
+        color: blue;
+      }
+  
+      &--purple {
+        background-color: purple;
+        color: white;
+      }
+
+      &--back {
+        background-color: green;
+        color: white;
+      }
+    }
+  }

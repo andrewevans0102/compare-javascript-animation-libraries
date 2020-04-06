@@ -1,0 +1,58 @@
+.anime {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 100px 400px;
+  grid-gap: 20px;
+  margin: 20px; 
+  align-items: center;
+
+  &__button {
+    width: 400px;
+    height: 100px;
+    background-color: orange;
+    color: white;
+    font-size: 40px;
+    border-radius: 20px;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &__label {
+    width: 200px;
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  &__timeline {
+    display: flex;
+    flex-direction: column;
+
+    &--pink {
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+      background-color: pink;
+      border-radius: 25px;
+    }
+
+    &--blue {
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+      background-color: blue;
+      border-radius: 25px;
+    }
+
+    &--yellow {
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+      background-color: yellow;
+      border-radius: 25px;
+    }
+  }
+}
